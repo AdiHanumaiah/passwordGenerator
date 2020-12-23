@@ -2,7 +2,6 @@ body {
 	background-color: #D8DBE5;
 	color: #221811;
 	font-family: Verdana, Arial, Sans-Serif;
-	background-image: url("images/background.gif");
 	box-sizing: border-box;
 }
 
@@ -123,36 +122,19 @@ main {
 #mobile { display:none;}
 #desktop { display: inline;}
 
-table { width: 90%;
-	  margin: auto;
-	  border-spacing: 0;
-	  background-color: #FEF6C2 }
-
-td, th { padding: 10px; }
-
-tr:nth-of-type(odd) { background-color: #D2B48C; }
-
-
-
-header, nav, main, footer { display: block;}
-
-
-form {padding: 2em;}
 
 label {float: left;
 display: block;
 text-align: right;
 width: 8em;
-padding-right: 1em; }
+padding-right: 10px;
+
+}
 
 input, textarea {display: block;
-margin-bottom: 1em;}
+margin-bottom: 10px;
+}
 
-#mySubmit {margin-left: 9.5em;}
-
-#herojobs{background-image: url("images/herojobs.jpg");
-			background-size: 100% 100%;
-			height: 250px;
 }
 
 
@@ -175,8 +157,16 @@ margin-bottom: 1em;}
 		box-shadow: none;
 	}
 
-	header {
-		border-bottom: 5px solid #FEF6C2;
+	#wrapper2 { 		margin-left: 0px;
+			margin-right: 0px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			width: 60%;
+			min-width: 600px;
+			max-width: 800px;
+			min-height: 600px;
+			max-height: 800px;
+			box-shadow: 0.2px 0.2px 3px 3px #020203;
 	}
 
 	h1 {
@@ -187,43 +177,9 @@ margin-bottom: 1em;}
 
 	}
 
-	nav {
-		float: none;
-		width: auto;
-		padding-top: 0;
-		margin: 10px;
-		font-size: 1.3em;
-
-
-	}
-
-	nav ul {
-		display: inline-block;
-
-
-	}
-
-	nav a {
-		padding: 1em;
-		width: 8em;
-		font-weight: bold;
-		border-style: none;
-
-	}
-
-
-	nav ul {
-		padding: 0;
-		margin: 0;
-	}
-
-#heroroad, #heroguitar, #heromugs, #herojobs
-{margin: 0;
-padding: 0;
-}
 
 	main {
-		margin: 0;
+		margin: 50;
 		font-size: 90%;
 	}
 
