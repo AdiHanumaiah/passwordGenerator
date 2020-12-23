@@ -191,30 +191,11 @@ margin-bottom: 10px;
 
 @media only screen and (max-width: 768px) {
 
-	header {
-		background-image: url("images/javajammini.jpg");
-		height: 128px;
-	}
 
 	h1{
 		font-size: 2em;
 		text-align: center;
 		padding-left: 0;
-	}
-
-	nav {
-		margin: 0;
-	}
-
-	nav a {
-		display: block;
-		padding: 0.2em;
-		width: auto;
-		border-bottom: 1px solid #FEF6C2;
-	}
-
-	nav li {
-		display: block;
 	}
 
 	main {
@@ -234,14 +215,6 @@ margin-bottom: 10px;
 		padding-right: 0;
 	}
 
-	#heroroad, #heroguitar, #heromugs, #herojobs
-{background-image: none;
-height: auto;
-}
-	.floatleft {
-		padding-left: 0.5em;
-		padding-right: 0.5em;
-	}
 
 	#mobile { display: inline;}
 	#desktop {display: none;}
