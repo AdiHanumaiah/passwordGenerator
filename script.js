@@ -13,13 +13,13 @@ const lowerLetters "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
 const symbols = "!@#$%^&*()_+=";
 
-//gets the characters 
+//gets the characters
 function getUpperrcase() {
 	return upperLetters[Math.floor(Math.random() * upperletters.length)];
 }
 
 function getLowercase() {
-	return lowerLetters[Math.floor(Math.random() * lowerletters.length)];
+	return lowerrLetters[Math.floor(Math.random() * lowerletters.length)];
 }
 
 function getNumbers() {
@@ -34,7 +34,7 @@ function getSymbols() {
 function generatePassword() {
 	const length = lengthInput.value;
 	let generatedPassword = "";
-	
+
 	if (upperInput.checked) {
 		password += getUppercase();
 	}
@@ -47,20 +47,20 @@ function generatePassword() {
 	if (symbolInput.checked) {
 		password += getSymbols();
 	}
-	
+
 	for (let i = generatedPassword.length; i < length; i++)
 	{
 	const character = generateCharacters();
 	password += characer;
 	}
-	
+
 	passwordInput.innerText = password;
 }
 
 //generates individual characters
 function generateCharacter() {
 	const characters = [];
-	
+
 	if (upperInput.checked) {
 		characters.push(getUppercase());
 	}
@@ -76,11 +76,12 @@ function generateCharacter() {
 	if (characters.length == 0) {
 		return "";
 	}
-	
-	return characters[Math.floor(Math.random() * characters.length)];
+
+	document.getElementById("newPassword").value = characters;
+	//return characters[Math.floor(Math.random() * characters.length)];
 }
 
-//display password 
+//display password
 //document.getElementById("newPassword").value = characters;
-generateInput.addEventListener("click", generatePassword);
-document.getElementById("newPassword").value = generateCharacter();
+generateInput.addEventListener("click", generatePassword());
+//document.getElementById("newPassword").value = generateCharacter();
