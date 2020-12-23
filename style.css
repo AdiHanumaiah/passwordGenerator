@@ -1,5 +1,353 @@
-/* Style Sheet */
-
 body {
-  
+	background-color: #D8DBE5;
+	color: #221811;
+	font-family: Verdana, Arial, Sans-Serif;
+	background-image: url("images/background.gif");
+	box-sizing: border-box;
+}
+
+header{
+	background-image: url("images/javajamlogo.jpg");
+	background-repeat: no-repeat;
+	background-color: #D2B48C;
+}
+
+h1 {
+
+
+	font-size: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	padding-bottom: 30px;
+
+}
+
+h2 {
+
+
+	font-size: 15px;
+	margin-top: 0;
+
+	text-align: center;
+
+
+}
+
+p1 {
+
+font-size: 15px;
+text-align: center;
+padding-left: 100px;
+
+
+
+
+}
+
+nav {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+	padding-top: 10px;
+	float: left;
+	width: 200px;
+
+}
+
+footer {
+	background-color: #D2B48C;
+	font-size: .60em;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 10px;
+	border-top: 2px;
+	border-top-color: #221811;
+}
+
+div {
+	text-align: left;
+}
+
+dt {
+	font-weight: bold;
+	text-align: left;
+}
+
+dd {
+	text-align: left;
+}
+
+#wrapper { margin-left: auto;
+		margin-right: auto;
+		width: 300px;
+		background-color: #D8DBE5;
+		border: 15px solid red;
+		padding: 50px;
+		min-width: 600px;
+		max-width: 800px;
+		box-shadow: 1px 1px 6px 6px #020203;
+		min-height: 600px;
+		max-height: 1000px;
+}
+
+#wrapper2 { margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 60%;
+		min-width: 600px;
+		max-width: 800px;
+		min-height: 600px;
+		max-height: 800px;
+		box-shadow: 0.2px 0.2px 3px 3px #020203;
+}
+
+.details {
+	font-weight: bold;
+	background-color: #D2B48C;
+
+	padding-left: 20%;
+	padding-right: 20%;
+	overflow: auto;
+
+}
+
+.right {
+padding-right: 10%;
+padding-left: 10%;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:link {color: #FEF6C2;}
+nav a:visited{color: #D2B48C;}
+nav a:hover{color: #CC9933;}
+
+nav ul {padding-left: 0;
+		list-style-type:none;
+}
+
+
+
+h4 {
+	background-color: #D2B48C;
+	font-size: 1.2em;
+	padding-left: .5em;
+	padding-bottom: .25em;
+	text-transform: uppercase;
+	border-bottom: 6px solid #231814;
+	padding-bottom: 0;
+	clear: left;
+
+}
+
+
+main {
+	padding-bottom: 2em;
+	padding-left: 0em;
+	padding-right: 0em;
+	display: block;
+	padding-top: 0em;
+	margin-left: 200px;
+	background-color: #FEF6C2;
+}
+
+#heroroad {background-image: url("images/heroroad.jpg");
+			background-size: 100% 100%;
+			height: 250px;
+}
+
+#heromugs {background-image: url("images/heromugs.jpg");
+			background-size: 100% 100%;
+			height: 250px;
+}
+
+#heroguitar{background-image: url("images/heroguitar.jpg");
+			background-size: 100% 100%;
+			height: 250px;
+}
+
+main h2, main h3, main h4, main p, main div, main ul, main dl, main dt, main dd{padding-left: 3em;
+padding-right: 2em;}
+
+.floatleft {float: left;
+padding-right: 2em;
+padding-bottom: 2em;
+
+}
+
+#mobile { display:none;}
+#desktop { display: inline;}
+
+table { width: 90%;
+	  margin: auto;
+	  border-spacing: 0;
+	  background-color: #FEF6C2 }
+
+td, th { padding: 10px; }
+
+tr:nth-of-type(odd) { background-color: #D2B48C; }
+
+
+
+header, nav, main, footer { display: block;}
+
+
+form {padding: 2em;}
+
+label {float: left;
+display: block;
+text-align: right;
+width: 8em;
+padding-right: 1em; }
+
+input, textarea {display: block;
+margin-bottom: 1em;}
+
+#mySubmit {margin-left: 9.5em;}
+
+#herojobs{background-image: url("images/herojobs.jpg");
+			background-size: 100% 100%;
+			height: 250px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+	body {margin: 0;
+	background-image: none;
+	}
+
+	#wrapper {
+		width: auto;
+		min-width: 0;
+		margin: 0;
+		padding: 0;
+		box-shadow: none;
+	}
+
+	header {
+		border-bottom: 5px solid #FEF6C2;
+	}
+
+	h1 {
+		margin-top: 0;
+		padding-bottom: .25em;
+		padding-top: 1em;
+		font-size: 2.5em;
+
+	}
+
+	nav {
+		float: none;
+		width: auto;
+		padding-top: 0;
+		margin: 10px;
+		font-size: 1.3em;
+
+
+	}
+
+	nav ul {
+		display: inline-block;
+
+
+	}
+
+	nav a {
+		padding: 1em;
+		width: 8em;
+		font-weight: bold;
+		border-style: none;
+
+	}
+
+
+	nav ul {
+		padding: 0;
+		margin: 0;
+	}
+
+#heroroad, #heroguitar, #heromugs, #herojobs
+{margin: 0;
+padding: 0;
+}
+
+	main {
+		margin: 0;
+		font-size: 90%;
+	}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+	header {
+		background-image: url("images/javajammini.jpg");
+		height: 128px;
+	}
+
+	h1{
+		font-size: 2em;
+		text-align: center;
+		padding-left: 0;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	nav a {
+		display: block;
+		padding: 0.2em;
+		width: auto;
+		border-bottom: 1px solid #FEF6C2;
+	}
+
+	nav li {
+		display: block;
+	}
+
+	main {
+		padding-top: 1px;
+	}
+
+	h2 {
+		padding-top: .5em;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-left: .5em;
+		margin-right: .5em;
+	}
+
+	.details {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#heroroad, #heroguitar, #heromugs, #herojobs
+{background-image: none;
+height: auto;
+}
+	.floatleft {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+
+	#mobile { display: inline;}
+	#desktop {display: none;}
+
+
 }
