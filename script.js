@@ -78,4 +78,4 @@ function generateCharacter() {
 }
 
 //display password 
-generateInput.addEventListener("click", generatePassword);
+generateInput.addEventListener("click", newPassword);
