@@ -1,4 +1,5 @@
 //grabs the input from the user by class id
+const passwordInput = document.getElementById("password");
 const lengthInput = document.getElementById("passwordLength");
 const upperInput = document.getElementById("upper");
 const lowerInput = document.getElementById("lower");
@@ -52,6 +53,8 @@ function generatePassword() {
 	const character = generateCharacters();
 	password += characer;
 	}
+	
+	passwordInput.innerText = password;
 }
 
 //generates individual characters
