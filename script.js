@@ -19,7 +19,7 @@ function getUpperrcase() {
 }
 
 function getLowercase() {
-	return lowerrLetters[Math.floor(Math.random() * lowerletters.length)];
+	return lowerLetters[Math.floor(Math.random() * lowerletters.length)];
 }
 
 function getNumbers() {
