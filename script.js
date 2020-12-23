@@ -1,4 +1,4 @@
-//grabs the input from the user by class id
+/grabs the input from the user by class id
 const lengthInput = document.getElementById("length");
 const upperInput = document.getElementById("upper");
 const lowerInput = document.getElementById("lower");
@@ -45,5 +45,11 @@ function generatePassword() {
 	}
 	if (symbolInput.checked) {
 		password += getSymbols();
+	}
+	
+	for (let i = generatedPassword.length; i < length; i++)
+	{
+	const character = generateCharacters();
+	password += characer;
 	}
 }
