@@ -34,12 +34,9 @@ h2 {
 
 }
 
-p1 {
+p {
 
 font-size: 15px;
-text-align: center;
-padding-left: 100px;
-
 
 
 
@@ -146,13 +143,14 @@ h4 {
 
 
 main {
-	padding-bottom: 2em;
+	text-align: center;
+	padding-bottom: 0em;
 	padding-left: 0em;
 	padding-right: 0em;
 	display: block;
 	padding-top: 0em;
-	margin-left: 200px;
-	background-color: #FEF6C2;
+	margin-left: 0px;
+	background-color: #D8DBE5;
 }
 
 #heroroad {background-image: url("images/heroroad.jpg");
@@ -170,8 +168,7 @@ main {
 			height: 250px;
 }
 
-main h2, main h3, main h4, main p, main div, main ul, main dl, main dt, main dd{padding-left: 3em;
-padding-right: 2em;}
+
 
 .floatleft {float: left;
 padding-right: 2em;
