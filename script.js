@@ -81,5 +81,5 @@ function generateCharacter() {
 }
 
 //display password 
-//document.getElementById("newPassword").value = characters;
+document.getElementById("newPassword").value = characters;
 generateInput.addEventListener("click", generatePassword());
