@@ -1,4 +1,4 @@
-/grabs the input from the user by class id
+//grabs the input from the user by class id
 const lengthInput = document.getElementById("length");
 const upperInput = document.getElementById("upper");
 const lowerInput = document.getElementById("lower");
@@ -52,4 +52,27 @@ function generatePassword() {
 	const character = generateCharacters();
 	password += characer;
 	}
+}
+
+//generates individual characters
+function generateCharacter() {
+	const characters = [];
+	
+	if (upperInput.checked) {
+		characters.push(getUppercase());
+	}
+	if (lowerInput.checked) {
+		characters.push(getLowercase());
+	}
+	if (numberInput.checked) {
+		characters.push(getNumbers());
+	}
+	if (symbolInput.checked) {
+		characters.push(getSymbols());
+	}
+	if (characters.length == 0) {
+		return "";
+	}
+	
+	return characters[Math.floor(Math.random() * characters.length)];
 }
