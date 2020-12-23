@@ -35,10 +35,11 @@ h2 {
 }
 
 p {
-
+width: 100%;
+padding: 12px 20px;
+margin: 5px 0;
+box-sizing: border-box;
 font-size: 15px;
-
-
 
 }
 
