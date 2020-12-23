@@ -1,10 +1,10 @@
 //grabs the input from the user by class id
-const lengthInput = document.getElementById("length");
+const lengthInput = document.getElementById("passwordLength");
 const upperInput = document.getElementById("upper");
 const lowerInput = document.getElementById("lower");
-const symbolInput = document.getElementById("symbol");
-const numberInput = document.getElementById("number");
-const generateInput = document.getElementById("generate");
+const symbolInput = document.getElementById("symbols");
+const numberInput = document.getElementById("numbers");
+const generateInput = document.getElementById("newPassword");
 
 //characters that can be used in the password
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -76,3 +76,6 @@ function generateCharacter() {
 	
 	return characters[Math.floor(Math.random() * characters.length)];
 }
+
+//display password 
+generateInput.addEventListener("click", generatePassword);
