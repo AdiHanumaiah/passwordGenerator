@@ -55,6 +55,7 @@ function generatePassword() {
 	}
 
 	passwordInput.innerText = password;
+//document.getElementById("newPassword").value = password;
 }
 
 //generates individual characters
@@ -77,11 +78,8 @@ function generateCharacter() {
 		return "";
 	}
 
-	document.getElementById("newPassword").value = characters;
-	//return characters[Math.floor(Math.random() * characters.length)];
+	return characters[Math.floor(Math.random() * characters.length)];
 }
 
 //display password
-//document.getElementById("newPassword").value = characters;
 generateInput.addEventListener("click", generatePassword());
-//document.getElementById("newPassword").value = generateCharacter();
